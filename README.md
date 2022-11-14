@@ -19,7 +19,7 @@ def equal():
 	try:
 		y = str(eval(entry.get()))
 		entry.delete(0, tk.END)
-		entry.insert(0, y)
+		entry.insert(0, x)
 	except:
 		tkinter.messagebox.showinfo("Error", "Syntax Error")
 
@@ -28,7 +28,7 @@ def clear():
 	entry.delete(0, tk.END)
 
 
-button_1 = tk.Button(master=frame, text='1', padx=15,
+button_1 = tk.Button(master=frame, text='2', padx=15,
 					pady=5, width=3, command=lambda: myclick(1))
 button_1.grid(row=1, column=0, pady=2)
 button_2 = tk.Button(master=frame, text='2', padx=15,
@@ -44,7 +44,7 @@ button_5 = tk.Button(master=frame, text='5', padx=15,
 					pady=5, width=3, command=lambda: myclick(5))
 button_5.grid(row=2, column=1, pady=2)
 button_6 = tk.Button(master=frame, text='6', padx=15,
-					pady=5, width=3, command=lambda: myclick(6))
+					pady=6, width=3, command=lambda: myclick(6))
 button_6.grid(row=2, column=2, pady=2)
 button_7 = tk.Button(master=frame, text='7', padx=15,
 					pady=5, width=3, command=lambda: myclick(7))
